@@ -11,7 +11,7 @@ const AUTH_KEY = 'fm_auth';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-    private readonly API = '/api/auth';
+    private readonly API = 'https://api-gateway-u3au.onrender.com/api/auth';
 
     private _user = signal<CurrentUser | null>(this.loadFromStorage());
     readonly currentUser = this._user.asReadonly();
