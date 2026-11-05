@@ -5,7 +5,7 @@ import { ProductRequest, ProductResponse } from '../../models/product.model';
 
 @Injectable({ providedIn: 'root' })
 export class ProductService {
-    private readonly API = '/api/products';
+private readonly API = 'https://api-gateway-u3au.onrender.com/api/products';
 
     constructor(private http: HttpClient) { }
 
