@@ -5,7 +5,7 @@ import { CartRequest, CartResponse } from '../../models/cart.model';
 
 @Injectable({ providedIn: 'root' })
 export class CartService {
-    private readonly API = '/api/cart';
+private readonly API = 'https://api-gateway-u3au.onrender.com/api/cart';
     private _cart = signal<CartResponse | null>(null);
     readonly cart = this._cart.asReadonly();
     readonly cartCount = computed(() =>
